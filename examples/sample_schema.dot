@@ -1,0 +1,26 @@
+digraph RDF_Schema {
+  rankdir=LR;
+  node [shape=record, style=filled, fillcolor=lightblue];
+  edge [color=darkblue, fontcolor=darkblue];
+
+  "_:node_root" [label="{<f0> _:node_root|<f1> Type: Object}}"];
+  "_:node_person" [label="{<f0> _:node_person|<f1> Type: Object|<f2> Properties:\nage: xs:int\nemergencyContact: string\nisEmployed: xs:boolean\nname: xs:string\nretired: xs:boolean\nsalary: xs:float\n}}"];
+  "_:node_address" [label="{<f0> _:node_address|<f1> Type: Object|<f2> Properties:\ncity: xs:string\nstreet: xs:string\nzipCode: xs:int\n}}"];
+  "_:node_phoneNumbers" [label="{<f0> _:node_phoneNumbers|<f1> Type: Array|<f2> Properties:\n0: xs:string\n1: xs:string\n}}"];
+  "_:node_skills" [label="{<f0> _:node_skills|<f1> Type: Array|<f2> Properties:\n0: xs:string\n1: xs:string\n2: xs:string\n}}"];
+  "_:node_education" [label="{<f0> _:node_education|<f1> Type: Array}}"];
+  "_:node_education_0" [label="{<f0> _:node_education_0|<f1> Type: Object|<f2> Properties:\ndegree: xs:string\nfield: xs:string\nyear: xs:int\n}}"];
+  "_:node_education_1" [label="{<f0> _:node_education_1|<f1> Type: Object|<f2> Properties:\ndegree: xs:string\nfield: xs:string\nyear: xs:int\n}}"];
+  "_:node_metadata" [label="{<f0> _:node_metadata|<f1> Type: Object|<f2> Properties:\ncreatedAt: xs:string\nversion: xs:float\n}}"];
+  "_:node_tags" [label="{<f0> _:node_tags|<f1> Type: Array|<f2> Properties:\n0: xs:string\n1: xs:string\n2: xs:string\n}}"];
+
+  "_:node_root" -> "_:node_person" [label="person"];
+  "_:node_person" -> "_:node_address" [label="address"];
+  "_:node_person" -> "_:node_phoneNumbers" [label="phoneNumbers"];
+  "_:node_person" -> "_:node_skills" [label="skills"];
+  "_:node_person" -> "_:node_education" [label="education"];
+  "_:node_education" -> "_:node_education_0" [label="0"];
+  "_:node_education" -> "_:node_education_1" [label="1"];
+  "_:node_root" -> "_:node_metadata" [label="metadata"];
+  "_:node_metadata" -> "_:node_tags" [label="tags"];
+}

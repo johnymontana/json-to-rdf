@@ -1,0 +1,26 @@
+# DQL Schema generated from RDF data
+# Define types for each predicate
+0: string | uid .
+1: string | uid .
+2: string .
+address: uid .
+age: int .
+city: string .
+createdAt: string .
+degree: string .
+education: uid .
+emergencyContact: string .
+field: string .
+isEmployed: bool .
+metadata: uid .
+name: string .
+person: uid .
+phoneNumbers: uid .
+retired: bool .
+salary: float .
+skills: uid .
+street: string .
+tags: uid .
+version: float .
+year: int .
+zipCode: int .

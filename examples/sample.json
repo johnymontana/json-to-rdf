@@ -1,0 +1,37 @@
+{
+  "person": {
+    "name": "John Doe",
+    "age": 30,
+    "isEmployed": true,
+    "address": {
+      "street": "123 Main St",
+      "city": "Anytown",
+      "zipCode": 12345
+    },
+    "phoneNumbers": [
+      "555-1234",
+      "555-5678"
+    ],
+    "skills": ["programming", "design", "communication"],
+    "education": [
+      {
+        "degree": "Bachelor's",
+        "field": "Computer Science",
+        "year": 2015
+      },
+      {
+        "degree": "Master's",
+        "field": "Data Science",
+        "year": 2018
+      }
+    ],
+    "salary": 75000.50,
+    "retired": false,
+    "emergencyContact": null
+  },
+  "metadata": {
+    "createdAt": "2023-01-15",
+    "version": 1.0,
+    "tags": ["sample", "test", "example"]
+  }
+}

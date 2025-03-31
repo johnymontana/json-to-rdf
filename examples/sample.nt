@@ -1,0 +1,44 @@
+<http://example.org/resource/root/person/education> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/json/Array> .
+<http://example.org/resource/root/person/skills> <http://example.org/json/2> "communication"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/resource/root/metadata/tags> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/json/Array> .
+<http://example.org/resource/root/person> <http://example.org/json/isEmployed> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://example.org/resource/root/person> <http://example.org/json/name> "John Doe"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/resource/root/person/education/0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/json/Object> .
+<http://example.org/resource/root/person/education> <http://example.org/json/1> <http://example.org/resource/root/person/education/1> .
+<http://example.org/resource/root/person/skills> <http://example.org/json/0> "programming"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/resource/root/person/education> <http://example.org/json/0> <http://example.org/resource/root/person/education/0> .
+<http://example.org/resource/root/person/skills> <http://example.org/json/1> "design"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/resource/root/person/phoneNumbers> <http://example.org/json/1> "555-5678"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/resource/root/person> <http://example.org/json/skills> <http://example.org/resource/root/person/skills> .
+<http://example.org/resource/root/person/phoneNumbers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/json/Array> .
+<http://example.org/resource/root/person> <http://example.org/json/phoneNumbers> <http://example.org/resource/root/person/phoneNumbers> .
+<http://example.org/resource/root/person/education/1> <http://example.org/json/degree> "Master's"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/resource/root/person/address> <http://example.org/json/city> "Anytown"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/resource/root/person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/json/Object> .
+<http://example.org/resource/root/person/address> <http://example.org/json/street> "123 Main St"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/resource/root/person/education/0> <http://example.org/json/degree> "Bachelor's"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/resource/root/metadata> <http://example.org/json/version> "1.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/root/person/address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/json/Object> .
+<http://example.org/resource/root/metadata/tags> <http://example.org/json/2> "example"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/resource/root/metadata> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/json/Object> .
+<http://example.org/resource/root/person/phoneNumbers> <http://example.org/json/0> "555-1234"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/resource/root/person> <http://example.org/json/salary> "75000.5"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://example.org/resource/root/person/education/1> <http://example.org/json/field> "Data Science"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/resource/root/person> <http://example.org/json/emergencyContact> <http://example.org/json/null> .
+<http://example.org/resource/root/person> <http://example.org/json/education> <http://example.org/resource/root/person/education> .
+<http://example.org/resource/root/person/education/1> <http://example.org/json/year> "2018"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/root/metadata/tags> <http://example.org/json/1> "test"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/resource/root/person> <http://example.org/json/age> "30"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/root/person/education/0> <http://example.org/json/year> "2015"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/root/person/skills> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/json/Array> .
+<http://example.org/resource/root> <http://example.org/json/metadata> <http://example.org/resource/root/metadata> .
+<http://example.org/resource/root> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/json/Object> .
+<http://example.org/resource/root/person> <http://example.org/json/address> <http://example.org/resource/root/person/address> .
+<http://example.org/resource/root/person> <http://example.org/json/retired> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://example.org/resource/root> <http://example.org/json/person> <http://example.org/resource/root/person> .
+<http://example.org/resource/root/person/address> <http://example.org/json/zipCode> "12345"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/resource/root/metadata> <http://example.org/json/createdAt> "2023-01-15"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/resource/root/person/education/0> <http://example.org/json/field> "Computer Science"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/resource/root/metadata/tags> <http://example.org/json/0> "sample"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.org/resource/root/person/education/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/json/Object> .
+<http://example.org/resource/root/metadata> <http://example.org/json/tags> <http://example.org/resource/root/metadata/tags> .

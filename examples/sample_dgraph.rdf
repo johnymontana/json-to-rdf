@@ -1,0 +1,44 @@
+_:node_root <dgraph.type> "Object" .
+_:node_person <dgraph.type> "Object" .
+_:node_root <person> _:node_person .
+_:node_person <name> "John Doe"^^<xs:string> .
+_:node_person <age> "30"^^<xs:int> .
+_:node_person <isEmployed> "true"^^<xs:boolean> .
+_:node_address <dgraph.type> "Object" .
+_:node_person <address> _:node_address .
+_:node_address <street> "123 Main St"^^<xs:string> .
+_:node_address <city> "Anytown"^^<xs:string> .
+_:node_address <zipCode> "12345"^^<xs:int> .
+_:node_phoneNumbers <dgraph.type> "Array" .
+_:node_person <phoneNumbers> _:node_phoneNumbers .
+_:node_phoneNumbers <0> "555-1234"^^<xs:string> .
+_:node_phoneNumbers <1> "555-5678"^^<xs:string> .
+_:node_skills <dgraph.type> "Array" .
+_:node_person <skills> _:node_skills .
+_:node_skills <0> "programming"^^<xs:string> .
+_:node_skills <1> "design"^^<xs:string> .
+_:node_skills <2> "communication"^^<xs:string> .
+_:node_education <dgraph.type> "Array" .
+_:node_person <education> _:node_education .
+_:node_education_0 <dgraph.type> "Object" .
+_:node_education <0> _:node_education_0 .
+_:node_education_0 <degree> "Bachelor's"^^<xs:string> .
+_:node_education_0 <field> "Computer Science"^^<xs:string> .
+_:node_education_0 <year> "2015"^^<xs:int> .
+_:node_education_1 <dgraph.type> "Object" .
+_:node_education <1> _:node_education_1 .
+_:node_education_1 <degree> "Master's"^^<xs:string> .
+_:node_education_1 <field> "Data Science"^^<xs:string> .
+_:node_education_1 <year> "2018"^^<xs:int> .
+_:node_person <salary> "75000.5"^^<xs:float> .
+_:node_person <retired> "false"^^<xs:boolean> .
+_:node_person <emergencyContact> "null" .
+_:node_metadata <dgraph.type> "Object" .
+_:node_root <metadata> _:node_metadata .
+_:node_metadata <createdAt> "2023-01-15"^^<xs:string> .
+_:node_metadata <version> "1.0"^^<xs:float> .
+_:node_tags <dgraph.type> "Array" .
+_:node_metadata <tags> _:node_tags .
+_:node_tags <0> "sample"^^<xs:string> .
+_:node_tags <1> "test"^^<xs:string> .
+_:node_tags <2> "example"^^<xs:string> .
